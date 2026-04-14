@@ -1,17 +1,23 @@
-algoritmo "Nome do Programa"
-// Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : ${DATA_ATUAL}/${MES_ATUAL}/${ANO_ATUAL}
-var
+algoritmo "exercicio-3"
 
-teste: caractere
+var
+   nome: caractere
+   numAlunos: inteiro
 
 inicio
+   escreva("Digite o nome do aluno (ou Fim para encerrar): ")
+   leia(nome)
 
-teste <- "Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
+    enquanto (nome <> "Fim") faca
+      escreval("Nome: ", nome)
+
+      escreva("Digite o nome do aluno (ou Fim para encerrar): ")
+      leia(nome)
+      
+      numAlunos <- numAlunos + 1
+
+   fimenquanto
+
+   escreval("Total de alunos: ", numAlunos)
 
 fimalgoritmo
